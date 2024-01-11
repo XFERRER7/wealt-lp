@@ -6,10 +6,10 @@ import phonesImg from '@/assets/images/phone-small.png'
 
 export const Download = () => {
   return (
-    <section className='bg-zinc-800 flex justify-around items-center gap-20 h-[300px] relative'>
+    <section className='w-full bg-zinc-800 flex justify-center items-center gap-20 h-[300px] relative'>
 
-      <div className='flex flex-col gap-8'>
-        <h2 className="font-bold text-[40px] leading-[1.15]">Download Wealt! and <br /> Join with Other Peoples</h2>
+      <div className='flex flex-col items-center justify-center gap-8 mx-auto'>
+        <h2 className="font-bold text-2xl md:text-[40px] text-center md:text-left leading-[1.15]">Download Wealt! and <br /> Join with Other Peoples</h2>
 
         <div className="flex gap-5 items-center">
           <a
@@ -37,9 +37,9 @@ export const Download = () => {
 
       </div>
 
-      <div />
+      <div className='hidden md:block'/>
 
-      <Image src={phonesImg} alt='Imagem de celulares' className='absolute -top-24 right-5'/>
+      <Image src={phonesImg} alt='Imagem de celulares' className='absolute -top-24 right-5 hidden md:block'/>
 
     </section>
   )

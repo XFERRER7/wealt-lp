@@ -7,7 +7,7 @@ export const Smartphone = () => {
       <Image 
       src={smartphonesImg} 
       alt='Imagem de 3 celulares'
-      className='h-[550px] w-[700px]'
+      className='h-[350px] w-[650px] md:h-[550px] md:w-[700px]'
       />
     </section>
   )
