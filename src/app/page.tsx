@@ -1,9 +1,5 @@
 import Image from "next/image"
 import logo from '@/assets/images/logo.png'
-import playStoreLogo from '@/assets/images/play-store.png'
-import appStoreLogo from '@/assets/images/app-store.png'
-import phonesImg from '@/assets/images/phones.png'
-import bgImg from '@/assets/images/bg.png'
 import twitterImg from '@/assets/images/twitter-icon.png'
 import instagramImg from '@/assets/images/insta-icon.png'
 import youtubeImg from '@/assets/images/youtube-icon.png'
@@ -28,7 +24,7 @@ export default function Home() {
 
       </main>
 
-      <footer className="h-[243px] bg-[#141414] flex flex-col justify-between items-center pt-8 pb-5">
+      <footer id="contact" className="h-[243px] bg-[#141414] flex flex-col justify-between items-center pt-8 pb-5">
 
         <div className="flex justify-between items-center w-[8.5rem]">
           <Image width={45} height={27} src={logo} alt="logo" className="mb-1" />

@@ -6,7 +6,7 @@ import phonesImg from '@/assets/images/phone-small.png'
 
 export const Download = () => {
   return (
-    <section className='w-full bg-zinc-800 flex justify-center items-center gap-20 h-[300px] relative'>
+    <section id='services' className='w-full bg-zinc-800 flex justify-center items-center gap-20 h-[300px] relative'>
 
       <div className='flex flex-col items-center justify-center gap-8 mx-auto'>
         <h2 className="font-bold text-2xl md:text-[40px] text-center md:text-left leading-[1.15]">Download Wealt! and <br /> Join with Other Peoples</h2>

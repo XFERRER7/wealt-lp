@@ -6,7 +6,7 @@ import appStoreLogo from '@/assets/images/app-store.png'
 import phonesImg from '@/assets/images/phones.png'
 import bgImg from '@/assets/images/bg.png'
 import { useState } from "react"
-import { Menu } from "lucide-react"
+import { CloudCog, Contact, ListCollapse, Menu, SearchSlash, X } from "lucide-react"
 
 export const Header = () => {
 
@@ -14,6 +14,42 @@ export const Header = () => {
 
   return (
     <header className="w-full max-w-[1550px] mx-auto relative md:h-screen flex flex-col justify-between overflow-y-hidden overflow-x-hidden px-10 md:px-20 py-10">
+
+      {/* Mobile navbar */}
+
+      <div className={`
+        ${isMenuOpen ? 'absolute' : 'hidden'} top-0
+        w-[calc(100%-5rem)] mt-20 md:hidden left-1/2 transform -translate-x-1/2
+        `}
+      >
+        <div className="
+          w-full h-full border-b border-t flex flex-col
+          justify-center gap-3 py-5 px-5 text-xl bg-zinc-800"
+        >
+
+          <a href="#about" className='flex gap-2 items-center'>
+            <SearchSlash />
+            <span className="h-10 px-2 text-white flex items-center">Sobre</span>
+          </a>
+
+          <a href="#characteristics" className='flex gap-2 items-center'>
+            <ListCollapse />
+            <span className="h-10 px-2 text-white flex items-center">Características</span>
+          </a>
+
+          <a href="#services" className='flex gap-2 items-center'>
+            <CloudCog />
+            <span className="h-10 px-2 text-white flex items-center">Serviços</span>
+          </a>
+
+          <a href="#contact" className='flex gap-2 items-center'>
+            <Contact />
+            <span className="h-10 px-2 text-white flex items-center">Contato</span>
+          </a>
+
+        </div>
+
+      </div>
 
       <div className="flex justify-between items-center w-full">
         <div className="flex justify-between items-center w-[8.5rem]">
@@ -23,13 +59,18 @@ export const Header = () => {
         <nav className="hidden md:block">
           <ul className="flex gap-8 font-medium">
             <li>Sobre</li>
-            <li>Característicos</li>
+            <li>Características</li>
             <li>Serviços</li>
             <li>Contato</li>
           </ul>
         </nav>
-        <button className="block md:hidden">
-          <Menu size={30} />
+        <button
+          className="block md:hidden"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
+          {
+            isMenuOpen ? <X size={30} /> : <Menu size={30} />
+          }
         </button>
         <div className="hidden md:w-[8.5rem]"></div>
       </div>
@@ -39,11 +80,11 @@ export const Header = () => {
         <div className="flex flex-col gap-7">
           <div className="flex flex-col gap-7">
             <h2 className="font-bold text-center md:text-left text-2xl md:text-[50px] leading-[1.15]">
-              Seu Caminho para a <br className="hidden md:block"/> Prosperidade <br className="hidden md:block"/> Financeira
+              Seu Caminho para a <br className="hidden md:block" /> Prosperidade <br className="hidden md:block" /> Financeira
             </h2>
-    
+
             <p className="text-zinc-500 text-center md:text-left text-sm">
-              Wealt é seu companheiro confiável para uma gestão financeira segura <br className="hidden md:block"/> e sem complicações.
+              Wealt é seu companheiro confiável para uma gestão financeira segura <br className="hidden md:block" /> e sem complicações.
             </p>
           </div>
 
