@@ -32,7 +32,7 @@ export const Header = () => {
             <span className="h-10 px-2 text-white flex items-center">Sobre</span>
           </a>
 
-          <a href="#contact" className='flex gap-2 items-center'>
+          <a href="mailto:seiertechnology@gmail.com" target="_blank" className='flex gap-2 items-center'>
             <Contact />
             <span className="h-10 px-2 text-white flex items-center">Contato</span>
           </a>
