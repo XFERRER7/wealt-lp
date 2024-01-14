@@ -9,12 +9,12 @@ export const Download = () => {
     <section id='services' className='w-full bg-zinc-800 flex justify-center items-center gap-20 h-[300px] relative'>
 
       <div className='flex flex-col items-center justify-center gap-8 mx-auto'>
-        <h2 className="font-bold text-2xl md:text-[40px] text-center md:text-left leading-[1.15]">Download Wealt! and <br /> Join with Other Peoples</h2>
+        <h2 className="font-bold text-2xl md:text-[40px] text-center md:text-left leading-[1.15]">Baixar Wealt!<br />  Junte-se a outras pessoas</h2>
 
         <div className="flex gap-5 items-center">
           <a
             className="bg-black rounded-lg flex gap-3 justify-center items-center w-[9.0rem] py-1 text-sm"
-            href="https://play.google.com/store"
+            href="https://play.google.com/store/apps/details?id=app.wealt"
             target="_blank">
             <Image height={20} width={18} src={playStoreLogo} alt="play-store-logo" />
             <div className="flex flex-col">

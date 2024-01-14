@@ -32,16 +32,6 @@ export const Header = () => {
             <span className="h-10 px-2 text-white flex items-center">Sobre</span>
           </a>
 
-          <a href="#characteristics" className='flex gap-2 items-center'>
-            <ListCollapse />
-            <span className="h-10 px-2 text-white flex items-center">Características</span>
-          </a>
-
-          <a href="#services" className='flex gap-2 items-center'>
-            <CloudCog />
-            <span className="h-10 px-2 text-white flex items-center">Serviços</span>
-          </a>
-
           <a href="#contact" className='flex gap-2 items-center'>
             <Contact />
             <span className="h-10 px-2 text-white flex items-center">Contato</span>
@@ -56,12 +46,18 @@ export const Header = () => {
           <Image width={45} height={27} src={logo} alt="logo" className="mb-1" />
           <h1 className="font-lilac text-2xl">Wealt</h1>
         </div>
-        <nav className="hidden md:block">
+        <nav className="hidden md:block z-50">
           <ul className="flex gap-8 font-medium">
-            <li>Sobre</li>
-            <li>Características</li>
-            <li>Serviços</li>
-            <li>Contato</li>
+            <li>
+              <a href="#about">
+                Sobre
+              </a>
+            </li>
+            <li>
+              <a href="mailto:seiertechnology@gmail.com" target="_blank">
+                Contato
+              </a>
+            </li>
           </ul>
         </nav>
         <button
@@ -91,7 +87,7 @@ export const Header = () => {
           <div className="flex gap-5 items-center mx-auto md:mx-0">
             <a
               className="bg-[#2F2F2F] rounded-lg flex gap-3 justify-center items-center w-[9.0rem] py-1 text-sm"
-              href="https://play.google.com/store"
+              href="https://play.google.com/store/apps/details?id=app.wealt"
               target="_blank">
               <Image height={20} width={18} src={playStoreLogo} alt="play-store-logo" />
               <div className="flex flex-col">
