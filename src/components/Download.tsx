@@ -9,7 +9,7 @@ export const Download = () => {
     <section id='services' className='w-full bg-zinc-800 flex justify-center items-center gap-20 h-[300px] relative'>
 
       <div className='flex flex-col items-center justify-center gap-8 mx-auto'>
-        <h2 className="font-bold text-2xl md:text-[40px] text-center md:text-left leading-[1.15]">Baixar Wealt!<br />  Junte-se a outras pessoas</h2>
+        <h2 className="font-bold text-2xl md:text-[40px] text-center md:text-left leading-[1.15]">Baixe Wealt!<br />  Junte-se a outras pessoas</h2>
 
         <div className="flex gap-5 items-center">
           <a
